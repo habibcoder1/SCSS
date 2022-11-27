@@ -1,0 +1,46 @@
+/*
+    Header Area Stylesheet
+*/
+.header-area{
+    background-color: $secondaryColor;
+    display: flex;
+    padding: 10px 0;
+    box-shadow: 0 0 8px $blackColor;
+    .menu-area{
+        background-color: $secondaryColor; 
+        .logo-area{ 
+            background-color: $secondaryColor;
+             a{
+                background-color: $secondaryColor;
+                color: $whiteColor;
+                padding-top: 4px;
+                font-size: 22px;
+                font-family: $secondaryFont;
+                transition: .3s ease all;
+             }
+             :hover{
+                color: $primaryColor;
+             }
+        }
+        .main-menu{
+            background-color: $secondaryColor;
+            text-align: right;
+            ul{
+                background-color: $secondaryColor;
+                .active{
+                    color: $secondaryColor;
+                }
+            }
+            a{
+                padding: 8px 15px;
+                background: $primaryColor;
+                color: $whiteColor;
+                border-radius: 3px;
+                transition: .3s ease all;
+            }
+            :hover{
+                color: $secondaryColor;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+/* 
+    Theme Stylesheet
+*/
+
+
+// Utilities 
+@import "utilities";
+
+// Header Area
+@import "header";
+
+// Services
+@import "services";
+
+// Mixin, Include & About Area
+@import "mixin";
+
+
+// Extend
+.about-one p:first-child{ 
+    @extend .btn;         // Extend button class design
+    background: darken($primaryColor, 10%);
+    // width: 110% - 10%;       // Operator use
+} 
+
+
+// Function
+@mixin fontSize($value){
+    @if($value == small){
+        font-size: 12px;
+    }
+    @else if($value == medium){
+        font-size: 16px;
+    }
+    @else if($value == large){
+        font-size: 18px;
+    }
+    @else{
+        font-size: inherit;
+    }
+}
+.about-one p{
+    @include fontSize(medium);
+}

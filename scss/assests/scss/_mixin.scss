@@ -1,0 +1,71 @@
+/*
+    Mixin Stylesheet
+*/
+
+// Mixin for single about
+@mixin aboutDesign($aboutbgColor){
+    color: $whiteColor;
+    border-radius: 10px;
+    padding: 20px 15px;
+    p{
+        color: $whiteColor;
+    }
+    background-color: $aboutbgColor;
+}
+
+// Mixin for Button
+@mixin buttonMixin{
+    text-transform: uppercase;
+    padding: 5px 50px;
+    color: $whiteColor;
+    background: $secondaryColor;
+    display: inline-block;
+    cursor: pointer;    
+    border-radius: 0;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+    &:hover{
+        background-color: $whiteColor;
+        color: $secondaryColor;
+    }
+}
+
+// Button
+.btn{
+    @include buttonMixin;
+}
+
+
+///// About Area Style //////
+.about-area{
+    padding-bottom: 30px;
+    text: {
+        transform: capitalize;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    address{
+        font-family: $primaryFont;
+    }
+
+    .about-one{
+        @include aboutDesign(#fd79a8);   // mixin include
+        .btn{
+            background: darken($primaryColor, 10%);
+            &:hover{
+                background: $whiteColor;
+            }
+        }
+    }
+    .about-two{
+        @include aboutDesign(#00cec9);   // mixin include
+        p:first-child{
+            @extend .btn;   // Extend button class design
+        }
+    }
+
+}

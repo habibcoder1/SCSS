@@ -1,0 +1,92 @@
+// Typography/Author CSS
+
+
+// Color Variable
+$primaryColor: #34495e;
+$secondaryColor: #ff7675;
+$headingColor: #2c3e50;
+$bgColor: #dfe6e9;
+$blackColor: #34495e;
+$whiteColor: #fff;
+
+// Fonts Variable
+$primaryFont: 'Poppins', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: $primaryFont;
+}
+body{
+    background-color: $bgColor;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $secondaryFont;
+    color: $headingColor;
+    font-weight: bold;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 28px;
+}
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 18px;
+}
+P{
+    font-family: $primaryFont;
+    color: $primaryColor;
+    font-size: 16px;
+}
+a{
+    text-transform: capitalize;
+    font-size: 16px;
+    text-decoration: none;
+    color: $primaryColor;
+    display: inline-block;
+}
+a:focus,
+a:hover{
+    text-decoration: none;
+}
+input,
+textarea,
+select,
+button{
+    font-size: 16px;
+    border: 1px solid $primaryColor;
+    border-radius: 3px;
+    color: $primaryColor;
+    outline: 0;
+    padding: 3px 8px;
+}
+::placeholder{
+    color: $primaryColor;
+    opacity: .7;
+    font-style: italic;
+}

@@ -1,0 +1,35 @@
+/*
+    Services Area Stylesheet
+*/
+
+.services-area{
+    text-align: center;
+    padding: 20px 0;
+    .single-service{
+        padding: 15px;
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        border-radius: 10px;
+        i{
+            font-size: 30px;
+        }
+        h2{
+            text-transform: capitalize;
+            margin-top: 10px;
+            color: $whiteColor; 
+        }
+        p{
+            color: $whiteColor;;
+        }
+    }
+    .col:nth-child(odd) .single-service{
+        background-color: $primaryColor;
+    }
+    @media (max-width: 768px){
+        .single-service{
+            margin-bottom: 20px;
+        }
+    }
+
+
+}

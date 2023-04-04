@@ -1,0 +1,71 @@
+// Header Style
+.header-area{
+    background-color: #f5f6fa;
+    padding-bottom: 40px;
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .menu-logo-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid $primaryColor;
+
+        // Logo Style
+        .logo-area{
+            width: 15%;
+        }
+
+        // Menu Area Style
+        .menu-area{
+            width: 85%;
+            ul{
+                text-align: center;
+                li{
+                    margin-right: 5px;
+                    a{
+                        @include themeBtn();
+                        text-transform: uppercase;
+                    }
+                    :hover{
+                        @include bthHover();
+                    }
+                    .active{
+                        @include bthHover();
+                    }
+                }
+            }
+            
+        }
+    }
+
+    // Hero Area
+    .hero-area{
+        text-align: center;
+        .hero-title{
+            margin: 15px 0;
+            h2{
+                text-transform: uppercase;
+            }
+        }
+        .hero-description{
+            width: 70%;
+            margin: auto;
+            p{
+                font-size: 16px;
+            }
+        }
+        .hero-btn{
+            margin-top: 30px;
+            a{
+                @include themeBtn();
+            }
+            :hover{
+                @include bthHover();
+            }
+        }
+    } 
+    
+}

@@ -1,0 +1,42 @@
+// Services Style
+
+.service-area{
+    text-align: center;
+    background-color: $whiteColor;
+    padding: 40px 0;
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .service-title{
+        margin-bottom: 8px;
+        h2{
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+    .service-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        .single-service {
+            padding: 30px 15px;
+            border-radius: 10px;
+            &:nth-child(odd){
+                background-color: $primaryColor;
+            }
+            &:nth-child(2){
+                background-color: $SecondaryColor;
+                margin: 0 15px;
+            }
+            h3{
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+        }
+        
+    }
+
+}

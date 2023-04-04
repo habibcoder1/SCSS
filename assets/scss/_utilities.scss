@@ -1,0 +1,101 @@
+/* Typhography/Custom CSS */
+
+/* Color Variable */
+$primaryColor: #55efc4;
+$SecondaryColor: #fab1a0;
+$bgColor: #f5f6fa;
+$blackColor: #2d3436;
+$whiteColor: #ffffff;
+
+/* Font Variable */
+$PrimaryFont: tahoma, sans-serif;
+
+/* Typhography */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $PrimaryFont;
+}
+html,
+body{
+    font-size: 16px;
+    font-family: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-weight: bold;
+    color: $blackColor;
+    letter-spacing: 1px;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 22px;
+}
+h6{
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: $blackColor;
+    display: inline-block;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+    box-shadow: none;
+}
+p{
+    font-size: 15px;
+    font-family: $PrimaryFont;
+    color: $blackColor;
+    line-height: 1.5em;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+// Mixin
+@mixin themeBtn(){
+    font-weight: 600;
+    padding: 12px 20px;
+    background: $SecondaryColor;
+    border-radius: 5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: .4s ease all;
+    -webkit-transition: .4s ease all;
+    -moz-transition: .4s ease all;
+    -ms-transition: .4s ease all;
+    -o-transition: .4s ease all;
+}
+
+@mixin bthHover(){
+    background-color: $primaryColor;
+}

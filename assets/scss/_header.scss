@@ -21,13 +21,35 @@
         // Menu Area Style
         .menu-area{
             width: 85%;
+            nav{
+                @media (max-width: 992px){
+                    position: relative;
+                }
+            }
             ul{
                 text-align: center;
+                @media (max-width: 992px){
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 85%;
+                    background: antiquewhite;
+                    padding: 8px 0;
+                    margin-top: 20px;
+
+                }
                 li{
                     margin-right: 5px;
+                    @media (max-width: 992px){
+                        display: block;
+                        margin: 10px 0;
+                    }
                     a{
-                        @include themeBtn(red);
+                        @include themeBtn($SecondaryColor);
                         text-transform: uppercase;
+                        @media (max-width: 992px){
+                            width: 160px;
+                        }
                     }
                     :hover{
                         @include bthHover();
@@ -35,6 +57,7 @@
                     .active{
                         @include bthHover();
                     }
+                    
                 }
             }
             
@@ -53,6 +76,9 @@
         .hero-description{
             width: 70%;
             margin: auto;
+            @media (max-width: 992px){
+                width: 80%;
+            }
             p{
                 font-size: 16px;
             }
@@ -60,7 +86,7 @@
         .hero-btn{
             margin-top: 30px;
             a{
-                @include themeBtn(blue);
+                @include themeBtn($SecondaryColor);
             }
             :hover{
                 @include bthHover();

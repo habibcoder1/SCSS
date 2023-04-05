@@ -20,6 +20,12 @@
         justify-content: center;
         align-items: center;
         margin-top: 40px;
+        @media (min-width: 767.99px) and (max-width: 1050px){
+            align-items: inherit;
+        }
+        @media (max-width: 768px){
+            display: block;
+        }
 
         .single-service {
             padding: 30px 15px;
@@ -30,6 +36,9 @@
             &:nth-child(2){
                 background-color: $SecondaryColor;
                 margin: 0 15px;
+                @media (max-width: 768px){
+                    margin: 15px 0;
+                }
             }
             h3{
                 text-transform: capitalize;

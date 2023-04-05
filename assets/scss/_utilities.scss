@@ -82,10 +82,10 @@ img{
 
 
 // Mixin
-@mixin themeBtn(){
+@mixin themeBtn($btnColor){
     font-weight: 600;
     padding: 12px 20px;
-    background: $SecondaryColor;
+    background: $btnColor;
     border-radius: 5px;
     text-transform: capitalize;
     letter-spacing: 1px;

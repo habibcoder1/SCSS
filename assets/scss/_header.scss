@@ -26,7 +26,7 @@
                 li{
                     margin-right: 5px;
                     a{
-                        @include themeBtn();
+                        @include themeBtn(red);
                         text-transform: uppercase;
                     }
                     :hover{
@@ -60,7 +60,7 @@
         .hero-btn{
             margin-top: 30px;
             a{
-                @include themeBtn();
+                @include themeBtn(blue);
             }
             :hover{
                 @include bthHover();
